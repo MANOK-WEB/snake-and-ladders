@@ -1,0 +1,72 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.instructions{
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.game-area{
+    text-align: center;
+}
+
+#board{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 20px auto;
+
+    background-image: url("https://wallpaperaccess.com/full/8870392.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cell{
+    border: none; /* removed grid lines */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgba(255,255,255,0); /* fully transparent */
+}
+
+.player{
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.player1{
+    background: red;
+}
+
+.player2{
+    background: blue;
+}
+
+button{
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}

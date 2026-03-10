@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake and Ladder Game</title>
+<link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+
+<h1>Snake and Ladder Game</h1>
+
+<div class="layout">
+
+<div class="instructions">
+<h3>Instructions</h3>
+<p>1. Player 1 and Player 2 take turns rolling the dice.</p>
+<p>2. The player moves based on the dice number.</p>
+<p>3. Landing on a ladder moves you up.</p>
+<p>4. Landing on a snake moves you down.</p>
+<p>5. First player to reach 100 wins.</p>
+</div>
+
+<div class="game-area">
+
+<h3 id="turn">Turn: Player 1</h3>
+
+<div id="board"></div>
+
+<button onclick="rollDice()">Roll Dice</button>
+
+<p id="dice">Dice: </p>
+<p id="p1pos">Player 1 Position: 0</p>
+<p id="p2pos">Player 2 Position: 0</p>
+
+</div>
+
+</div>
+
+<script src="ladder.js"></script>
+
+</body>
+</html>
